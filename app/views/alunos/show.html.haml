@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Matricula:
+  = @aluno.matricula
+%p
+  %b Nome:
+  = @aluno.nome
+%p
+  %b Sobrenome:
+  = @aluno.sobrenome
+%p
+  %b Senha:
+  = @aluno.senha
+
+= link_to 'Edit', edit_aluno_path(@aluno)
+\|
+= link_to 'Back', alunos_path
