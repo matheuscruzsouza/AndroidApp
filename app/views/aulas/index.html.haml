@@ -1,0 +1,25 @@
+%h1 Listing aulas
+
+%table
+  %thead
+    %tr
+      %th Data abertura
+      %th Conteudo
+      %th Disciplina
+      %th
+      %th
+      %th
+
+  %tbody
+    - @aulas.each do |aula|
+      %tr
+        %td= aula.data_abertura
+        %td= aula.conteudo
+        %td= aula.disciplina
+        %td= link_to 'Show', aula
+        %td= link_to 'Edit', edit_aula_path(aula)
+        %td= link_to 'Destroy', aula, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Aula', new_aula_path

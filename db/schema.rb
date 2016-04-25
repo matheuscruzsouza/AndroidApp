@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424102208) do
+ActiveRecord::Schema.define(version: 20160425215731) do
 
   create_table "alunos", force: :cascade do |t|
     t.string   "matricula"
@@ -21,6 +21,25 @@ ActiveRecord::Schema.define(version: 20160424102208) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "aulas", force: :cascade do |t|
+    t.string   "data_abertura"
+    t.string   "conteudo"
+    t.integer  "disciplina_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "aulas", ["disciplina_id"], name: "index_aulas_on_disciplina_id"
+
+  create_table "disciplinas", force: :cascade do |t|
+    t.string   "descricao"
+    t.integer  "professor_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "disciplinas", ["professor_id"], name: "index_disciplinas_on_professor_id"
 
   create_table "professores", force: :cascade do |t|
     t.string   "matricula"

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :aulas
+  resources :disciplinas
   resources :professores
   resources :alunos
   root to: 'visitors#index'

@@ -1,0 +1,10 @@
+= simple_form_for(@aula) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :data_abertura
+    = f.input :conteudo
+    = f.association :disciplina
+
+  .form-actions
+    = f.button :submit
