@@ -1,0 +1,5 @@
+Fazer os testes das classes aula e disciplina
+
+commitar e atualizar no github
+
+dar rake no heroku

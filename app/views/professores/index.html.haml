@@ -6,7 +6,6 @@
       %th Matricula
       %th Nome
       %th Sobrenome
-      %th Senha
       %th
       %th
       %th
@@ -17,7 +16,6 @@
         %td= professor.matricula
         %td= professor.nome
         %td= professor.sobrenome
-        %td= professor.senha
         %td= link_to 'Show', professor
         %td= link_to 'Edit', edit_professor_path(professor)
         %td= link_to 'Excluir', professor, :method => :delete, :data => { :confirm => 'Are you sure?' }

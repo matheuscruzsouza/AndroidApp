@@ -4,7 +4,7 @@
   .form-inputs
     = f.input :data_abertura
     = f.input :conteudo
-    = f.association :disciplina
+    = f.association :disciplina, label_method: :descricao
 
   .form-actions
     = f.button :submit

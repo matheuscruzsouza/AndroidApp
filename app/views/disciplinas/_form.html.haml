@@ -3,7 +3,7 @@
 
   .form-inputs
     = f.input :descricao
-    = f.association :professor
+    = f.association :professor, label_method: :nome
 
   .form-actions
     = f.button :submit
