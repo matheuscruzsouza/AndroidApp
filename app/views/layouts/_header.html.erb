@@ -2,6 +2,8 @@
 <ul id="menu">
 	<li><%= link_to "Home", root_path %></li>
 	<li><%= link_to "Alunos", alunos_path %></li>
+	<li><%= link_to "Professores", professores_path %></li>
+	<li><%= link_to "Disciplinas", disciplinas_path %></li>
 </ul>
 
 <style type="text/css">
@@ -10,11 +12,12 @@
 	}
 	#menu li a{
 		display: inline-block;
+		text-decoration: none;
+		font-weight: bold;
 		padding: 1% 2%;
 	}
 
 	#menu li a:hover{
 		background-color: #EDEDED;
-		border-radius: 10% 10%;
 	}
 </style>
