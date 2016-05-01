@@ -30,7 +30,6 @@ feature 'gerenciar professor' do
 		expect(page).to have_content 'Nome: Matheus'
 		expect(page).to have_content 'Sobrenome: Cruz'
 		expect(page).to have_content 'Matricula: 2013'
-		expect(page).to have_content 'Senha: x'
 	end
 	
 end
