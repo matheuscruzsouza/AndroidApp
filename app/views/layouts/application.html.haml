@@ -1,12 +1,14 @@
 %html
 	%head
 		%meta{ :charset =>"utf-8"}
-		%title= "AndroidApp"
+		%title= yield(:title)
 		= stylesheet_link_tag "application"
 		= javascript_include_tag "application"
 	%body
-		%header{ :class => "header" }
-			= render "layouts/header"
+		%div{ :class => "shadow"}
+			%div{ :class => "bootstrap"}
+				%header{ :class => "header" }
+					= render "layouts/header"
 
-		%main{ :role =>"main"}
-			= yield
+				%main{ :class => "main", :role =>"main"}
+					= yield
