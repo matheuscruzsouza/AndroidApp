@@ -1,6 +1,7 @@
 %h1 Listing disciplinas
 
 %table
+  %br
   %thead
     %tr
       %th Descricao
@@ -12,11 +13,31 @@
   %tbody
     - @disciplinas.each do |disciplina|
       %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
         %td= disciplina.descricao
         %td= disciplina.professor.nome
         %td= link_to 'Show', disciplina
         %td= link_to 'Edit', edit_disciplina_path(disciplina)
         %td= link_to 'Excluir', disciplina, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
 
 %br
 
