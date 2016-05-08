@@ -1,6 +1,7 @@
 %h1 Listing alunos
 
 %table
+  %br
   %thead
     %tr
       %th Matricula
@@ -10,8 +11,18 @@
       %th
       %th
 
+
   %tbody
     - @alunos.each do |aluno|
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
       %tr
         %td= aluno.matricula
         %td= aluno.nome
@@ -19,6 +30,19 @@
         %td= link_to 'Show', aluno
         %td= link_to 'Edit', edit_aluno_path(aluno)
         %td= link_to 'Excluir', aluno, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      
+
 
 %br
 

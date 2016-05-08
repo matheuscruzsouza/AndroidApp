@@ -1,6 +1,8 @@
 = simple_form_for(@professor) do |f|
   = f.error_notification
 
+  %br
+
   .form-inputs
     = f.input :matricula
     = f.input :nome
@@ -8,4 +10,6 @@
     = f.input :senha
 
   .form-actions
-    = f.submit :Salvar
+    = f.submit "Salvar"
+
+%br

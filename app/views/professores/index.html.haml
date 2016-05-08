@@ -10,8 +10,20 @@
       %th
       %th
 
+  %br
+
   %tbody
     - @professores.each do |professor|
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
       %tr
         %td= professor.matricula
         %td= professor.nome
@@ -19,6 +31,16 @@
         %td= link_to 'Show', professor
         %td= link_to 'Edit', edit_professor_path(professor)
         %td= link_to 'Excluir', professor, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
 
 %br
 
