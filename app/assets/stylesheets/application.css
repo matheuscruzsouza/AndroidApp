@@ -44,7 +44,7 @@ body{
 	background-color: #4CAF50;
 	border: none;
 	margin: 4px 2px;
-	padding: 16px 27px;
+	padding: 16px 32px;
 	border-radius: 4px;
 	font-weight: bold;
 	cursor: pointer;
@@ -86,12 +86,64 @@ body{
 	text-decoration: none;
 	font-weight: bold;
 	color: #FFFFFF;
-	padding: 1% 8.3%;
+	padding: 1% 6%;
 }
 
 #menu li a:hover{
 	background-color: #2C8F28;
 	color: #FFFFFF;
+	animation: 1s ease 0s alternate none infinite running text-shadow;
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.menuEsquerdo{
+	float: right;
+	background-color: #FFFFFF;
+	align-content: center;
+	padding: 0%;
+	text-align: center;
+	margin: 2px 2px;
+}
+.menuEsquerdo ul{
+	padding: 0px;
+}
+.menuEsquerdo li{
+	display: block;
+}
+.menuEsquerdo li a{
+	background-color: #4CAF50;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-radius: 4px;
+	padding: 15% 20%;
+	margin: 2px;
+}
+
+.menuEsquerdo li a:hover{
+	background-color: #2C8F28;
+	color: #FFFFFF;
+	animation: 1s ease 0s alternate none infinite running text-shadow;
+	transform: perspective(400px) rotateY(0deg);
+}
+
+@keyframes text-shadow{
+	0% {
+	    text-shadow: 0px 0px #000;
+	}
+	100% {
+	    text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.header h1{
+	color: #FFFFFF;
+	padding-left: 5%;
+}
+
+.header{
+	background-color: #4CAF50;
 }
 
 .bootstrap{
