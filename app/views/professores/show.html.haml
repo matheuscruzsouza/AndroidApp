@@ -10,6 +10,13 @@
   %b Sobrenome:
   = @professor.sobrenome
 
+%br
+  %h3 Disciplinas:
+  %br
+  - @professor.disciplinas.each do |disciplina|
+    %tr
+      %td= disciplina.descricao
+      %br
   %br
   %br
   %br

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :aluno_disciplinas
   resources :aulas
   resources :disciplinas
   resources :professores

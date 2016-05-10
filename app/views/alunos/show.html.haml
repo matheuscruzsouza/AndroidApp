@@ -11,6 +11,14 @@
   = @aluno.sobrenome
 
 %br
+%h3 Disciplinas
+- @aluno.aluno_disciplinas.each do |aluno_disciplinas|
+  %tr
+    %td= aluno_disciplinas.disciplina.descricao
+    %br
+
+
+%br
 %br
 
 = link_to 'Edit', edit_aluno_path(@aluno)

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Aluno:
+  = @aluno_disciplina.aluno.nome
+%p
+  %b Disciplina:
+  = @aluno_disciplina.disciplina.descricao
+
+%br
+%br
+
+= link_to 'Edit', edit_aluno_disciplina_path(@aluno_disciplina)
+\|
+= link_to 'Back', aluno_disciplinas_path

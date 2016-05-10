@@ -1,0 +1,11 @@
+%br
+= simple_form_for(@aluno_disciplina) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :aluno, label_method: :nome
+    = f.association :disciplina, label_method: :descricao
+
+  .form-actions
+    = f.submit "Salvar"
+%br

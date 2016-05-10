@@ -1,0 +1,35 @@
+%h1 Listing aluno_disciplinas
+
+%table
+  %thead
+    %tr
+      %th Aluno
+      %th Disciplina
+      %th
+      %th
+      %th
+
+  %tbody
+    - @aluno_disciplinas.each do |aluno_disciplina|
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+        %td= aluno_disciplina.aluno.nome
+        %td= aluno_disciplina.disciplina.descricao
+        %td= link_to 'Show', aluno_disciplina
+        %td= link_to 'Edit', edit_aluno_disciplina_path(aluno_disciplina)
+        %td= link_to 'Excluir', aluno_disciplina, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+      %tr
+
+%br
+
+= link_to 'New Aluno disciplina', new_aluno_disciplina_path
