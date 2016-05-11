@@ -2,10 +2,10 @@
 
 %p
   %b Aluno:
-  = @aluno_disciplina.aluno.nome
+  = @aluno_disciplina.aluno.nome if !@aluno_disciplina.aluno.nil?
 %p
   %b Disciplina:
-  = @aluno_disciplina.disciplina.descricao
+  = @aluno_disciplina.disciplina.descricao if !@aluno_disciplina.disciplina.nil?
 
 %br
 %br
