@@ -182,3 +182,8 @@ body{
 .footer{
 	bottom: 0;
 }
+
+#img{
+	margin-left: 20px;
+	text-decoration: none;
+}
